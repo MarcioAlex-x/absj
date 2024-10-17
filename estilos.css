@@ -265,4 +265,15 @@ video{
     .sobre{
         flex-direction: column;
     }
+    .grade ul, .experinces{
+        padding: 8px;
+        text-align: center;
+    }
+    .grade ul li{
+        font-size: 16px;
+    }
+    .sobre p{
+        font-size: 16px;
+        text-align: center;
+    }
 }
