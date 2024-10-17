@@ -1,0 +1,5 @@
+# robots.txt gerado por bluelinks.com.br
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://absj.vercel.app/

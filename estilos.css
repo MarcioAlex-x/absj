@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+body{
+    background-color: #2f3640;
+    color: #dcdde1;
+}
+header{
+    padding: 40px;
+    text-align: center;
+    max-width:960px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header button{
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 48px;
+    color: #fbc531;
+}
+h2, h3{
+    color: #4E691C;
+}
+header img{
+    margin-top: 40px;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+
+}
+header h2{
+    font-size: 40px;
+    margin-block: 16px;
+    animation: pisca 1s 1s infinite;
+}
+
+@keyframes pisca {
+    0%{
+        color: #fbc531;
+        text-shadow: 0px 0px 16px ;
+    }50%{
+        color: #4E691C;
+    }
+}
+header p{
+    font-size: 32px;
+    font-family: "Bebas Neue", system-ui;
+    margin-top: 40px;
+}
+.destaque{
+    font-family: "Bebas Neue", system-ui;
+    color: #4E691C;
+    font-size: 18px;
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+    /* color: #dcdde1; */
+    color: white;
+    font-weight: bolder;
+    height: 100vh;
+    
+}
+.timer h2{
+    font-size: 40px;
+}
+.timer p{
+    font-size: 32px;
+    margin-top: 24px;
+}
+.btn-inscricao{
+    padding: 8px 16px;
+    margin-top: 32px;
+    background-color: #4E691C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    border: 2px solid white;
+    transition: .5s;
+}
+.btn-inscricao:hover{
+    background-color: transparent;
+}
+.btn-inscricao a{
+    text-decoration: none;
+    color: #dcdde1;
+    font-weight: bold;
+    font-size: 16px ;
+}
+#data-hora{
+    font-size: 24px;
+    color: #4E691C;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin-bottom: 40px;
+    margin-inline: auto;
+    width: 960px;
+}
+.card-content h2{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 960px;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+.card{
+    background-color: #dcdde1;
+    color: #2f3640;
+    text-align: center;
+    border: 1px solid #d46b51;
+    border-radius: 8px;
+    padding: 40px 16px;
+    font-weight: bold;
+}
+.card .bi{
+    font-size: 32px;
+    color: #4E691C;
+}
+.prof-alex{
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prof-alex h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.prof-alex img{
+    width: 50%;
+    border-radius: 16px;
+}
+.experinces{    
+    max-width: 960px;
+    margin: auto
+}
+.experinces p{
+    margin: 24px auto;
+    text-align: center;
+    font-size: 18px;
+}
+.experinces h3{
+    font-size: 40px;
+    margin-block: 40px;
+    text-align: center;
+}
+.experinces ul{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.experinces ul li{
+    list-style: none;
+    text-align: center;
+}
+.redes{
+    
+    margin-block: 80px;
+}
+.redes  a .bi{
+    font-size: 32px;
+    margin-inline: 32px;
+    color: #dcdde1;
+}
+.grade h2{
+    text-align: center;
+    font-size: 32px;
+}
+.grade ul{
+    max-width: 690px;
+    margin: 40px auto;
+}
+.grade ul li{
+    list-style: circle;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.local{
+    margin-top: 80px;
+}
+.local h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sobre p{
+    text-align: justify;
+    font-size: 24px;
+}
+.sobre img{
+    object-fit: cover;
+}
+iframe{
+    width: 100%;
+}
+video{
+    border-radius: 4px;
+}
+.barra{
+    height: 1px;
+    width: 240px;
+    background-color: #4E691C;
+    margin: 0 auto 16px;
+}
+@media screen and (max-width: 450px){
+    header img{
+        width: 70%;
+        margin: auto;
+    }
+    .timer{
+        text-align: center;
+        padding: 16px;
+        color: #fbc531;
+    }
+    .timer h2{
+        color: #dcdde1;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+}
